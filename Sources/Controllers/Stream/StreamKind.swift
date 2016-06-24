@@ -151,6 +151,8 @@ public enum StreamKind {
                 return comments
             } else if let posts = jsonables as? [Post] {
                 return posts
+            } else if let users = jsonables as? [User] {
+                return users
             }
         }
         return []
